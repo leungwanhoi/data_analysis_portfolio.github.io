@@ -71,6 +71,16 @@ body {
   html, body {
     min-width: 320px; } }
 
+/* Smooth scrolling for all anchors */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Offset for fixed headers (adjust 80px to match your header height) */
+#my-projects {
+    scroll-margin-top: 80px;  /* Or scroll-padding-top if using padding */
+}
+
 html {
   box-sizing: border-box; }
 
