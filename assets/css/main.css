@@ -2281,3 +2281,100 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+
+/* Custom styles for certifications to align with theme */
+.cert-list {
+	list-style: none;
+	padding: 0;
+}
+.cert-list ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.cert-item {
+	background: #f9f9f9;
+	border-left: 4px solid #f56a6a;
+	margin-bottom: 20px;
+	padding: 20px;
+	border-radius: 0.375em;
+	transition: box-shadow 0.3s;
+	display: block;
+}
+.cert-item:hover {
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.cert-header {
+	display: flex;
+	flex-direction: row; /* Horizontal layout: left to right */
+	align-items: flex-start; /* Align items to top for uneven heights */
+	margin-bottom: 15px;
+	text-align: left;
+}
+.cert-badge {
+	width: 50px !important;
+	height: 50px !important;
+	border-radius: 50% !important;
+	overflow: hidden !important; /* Strictly clip image to circle */
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	flex-shrink: 0 !important;
+	margin-right: 15px !important;
+	background: none !important; /* No fallback background */
+	border: 1px solid #ddd !important; /* Optional subtle border for definition */
+	position: relative !important; /* Contain any absolute-positioned issues */
+}
+.cert-badge img {
+	width: 100% !important;
+	height: 100% !important;
+	object-fit: cover !important; /* Crop to fill circle, no stretch */
+	object-position: center !important; /* Center the focal point */
+	border-radius: 50% !important; /* Double-ensure circular clip */
+	display: block !important;
+}
+.cert-content {
+	flex: 1; /* Take remaining space on the right */
+	text-align: left;
+}
+.cert-title {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #f56a6a;
+	margin: 0 0 0.25em 0;
+}
+.cert-issuer {
+	color: #666;
+	font-style: italic;
+	margin: 0 0 0.25em 0; /* Reduced from 0.5em to tighten spacing */
+	display: block; /* Ensures block but minimal break */
+}
+.cert-id {
+	font-family: monospace;
+	padding: 2px 6px;
+	border-radius: 3px;
+	font-size: 0.9em;
+	color: #f56a6a;
+	margin: 0 0 0.25em 0; /* Reduced from 0.5em; remove if not used in HTML */
+	display: block;
+}
+.cert-details {
+	margin: 0 0 0.25em 0; /* Reduced from 1em to minimize line break feel */
+	color: #555;
+	display: block;
+}
+.show-btn {
+	background: #f56a6a;
+	color: white;
+	border: none;
+	padding: 8px 16px;
+	border-radius: 0.375em;
+	cursor: pointer;
+	font-size: 0.9em;
+	text-decoration: none;
+	display: inline-block;
+	transition: background 0.3s;
+}
+.show-btn:hover {
+	background: #e55a5a;
+}
