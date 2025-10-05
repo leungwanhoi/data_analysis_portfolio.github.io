@@ -1,7 +1,7 @@
 # [Data Analysis Porfolio](https://leungwanhoi.github.io/data_analysis_portfolio.github.io/index.html)
 
 
-:sparkles: I am currently a Year 5 Statistics major student from CUHK, here you can find all my statistical projects in detail.
+:sparkles: I am a Statistics graduate student from CUHK, here you can find all my statistical projects in detail.
 
 ## My frequently used programming languages:
 1. Python
